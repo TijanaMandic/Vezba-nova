@@ -1,0 +1,66 @@
+.accordion {
+    padding-top: 300px;
+}
+.accordion__item {
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
+.accordion__heading {
+    font-size: 60px;
+    line-height: 70px;
+    color: $brown;
+    margin-bottom: 60px;
+}
+.accordion__item-btn {
+    border: 1px solid $green;
+    border-radius: 5px;
+    background-color: rgba($green, 0.2);
+    outline: $green;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.accordion__item-btn-heading {
+    color: $green;
+    font-size: 25px;
+    line-height: 30px;
+    margin-right: 100px;
+}
+.accordion__item-btn-icon {
+    font-size: 20px;
+    color: $green;
+}
+.accordion__item-content {
+    background-color: rgba($white, 0.3);
+    border: 1px solid $white;
+    border-radius: 5px;
+}
+.accordion__item-content-info {
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+
+//js klase koje se dodaju
+.menu-icon-rotate {
+	.accordion__item-btn-icon {
+		transform: rotateX(180deg);
+		transition: transform 0.4s ease;
+	}
+}
+.content-show {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.4s ease-in-out;
+}
+
+accordion__item-content {
+    max-height: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.2s ease-in-out;
+}

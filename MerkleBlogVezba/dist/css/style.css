@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+/**
+iconfont Webfont
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot?1638868446648");
+  src: url("../fonts/iconfont.eot?#iefix-1638868446648") format("embedded-opentype"), url("../fonts/iconfont.woff2?1638868446648") format("woff2"), url("../fonts/iconfont.woff?1638868446648") format("woff"), url("../fonts/iconfont.ttf?1638868446648") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^='icon-']::before,
+[class*=' icon-']::before {
+  font-family: 'iconfont';
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  font-size: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+Glyphs list
+*/
+.icon-down::before {
+  content: '\ea01'; }
+
+.icon-heart::before {
+  content: '\ea02'; }
+
+.header__container::before, .header__container::after {
+  content: '';
+  display: table; }
+
+.header__container::after {
+  clear: both; }
+
+.wrap {
+  width: 100%;
+  max-width: 1025px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.has-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.body {
+  font-family: "Open Sans", serif;
+  font-weight: 400; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(159, 128, 108, 0.3);
+  padding: 20px 0; }
+
+.header__container-logo {
+  float: left; }
+
+.header__container-icon--logo {
+  color: #9f806c;
+  font-size: 50px;
+  transition: 0.4s; }
+  .header__container-icon--logo:hover {
+    color: #37432b;
+    opacity: 0.7; }
+
+.header__container-nav {
+  float: right;
+  padding: 18px 0; }
+
+.navigation__list {
+  font-size: 0; }
+
+.navigation__list-item {
+  display: inline-block;
+  vertical-align: top; }
+  .navigation__list-item:not(:last-of-type) {
+    margin-right: 25px; }
+
+.navigation__list-link {
+  font-size: 18px;
+  line-height: 19px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #37432b;
+  transition: 0.4s; }
+  .navigation__list-link:hover {
+    color: #37432b;
+    opacity: 0.7; }
+
+.main {
+  height: 1000px; }
+
+.accordion {
+  padding-top: 300px; }
+
+.accordion__item:not(:last-of-type) {
+  margin-bottom: 20px; }
+
+.accordion__heading {
+  font-size: 60px;
+  line-height: 70px;
+  color: #9f806c;
+  margin-bottom: 60px; }
+
+.accordion__item-btn {
+  border: 1px solid #37432b;
+  border-radius: 5px;
+  background-color: rgba(55, 67, 43, 0.2);
+  outline: #37432b;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.accordion__item-btn-heading {
+  color: #37432b;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 100px; }
+
+.accordion__item-btn-icon {
+  font-size: 20px;
+  color: #37432b; }
+
+.accordion__item-content {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF;
+  border-radius: 5px; }
+
+.accordion__item-content-info {
+  padding: 12px 0;
+  font-size: 16px;
+  line-height: 17px; }
+
+.menu-icon-rotate .accordion__item-btn-icon {
+  transform: rotateX(180deg);
+  transition: transform 0.4s ease; }
+
+.content-show {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s ease-in-out; }
+
+accordion__item-content {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-in-out; }

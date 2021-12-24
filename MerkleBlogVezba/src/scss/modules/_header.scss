@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($brown, 0.3);
+    padding: 20px 0;
+}
+.header__container {
+    @extend %clearfix;
+}
+.header__container-logo {
+    float: left;
+}
+.header__container-icon--logo {
+    color: $brown;
+    font-size: 50px;
+    transition: 0.4s;
+    &:hover {
+        color: $green;
+        opacity: 0.7;
+    }
+}
+.header__container-nav {
+    float: right;
+    padding: 18px 0;
+}
+.navigation__list {
+    font-size: 0;
+}
+.navigation__list-item {
+    display: inline-block;
+    vertical-align: top;
+    &:not(:last-of-type) {
+        margin-right: 25px;
+    }
+}
+.navigation__list-link {
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $green;
+    transition: 0.4s;
+    &:hover {
+        color: $green;
+        opacity: 0.7;
+    }
+}
